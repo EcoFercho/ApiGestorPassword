@@ -1,0 +1,22 @@
+El objetivos de este proyecto es hacer una api con nest js y node paa gestionar conctraseñas de equipos de manera segura. Las contraseñas deben devolverse encriptadas de manera que al hacerla uso para conectarse por ssh esta se desencripte y se evite usar contraseñas en texto plano., esto para equitar robo de credenciales. La base de datos estara en postgres con el usuario por defecto: erwin0pisis@gmail.com y su pass: 71769118.Usa swager para que la api se pueda probarde un navegado.
+
+end points:
+POST /api/autenticacion/iniciar-sesion
+GET /api/equipos/all (listar todos los equipos)
+POST /api/equipos (regiustrar equipos)
+GET /api/equipo/{ip} (devuelve todo la informacion del equipo)
+GET /api/equipoCredenciales/{ip} (devuelve todo la informacion del equipo)
+DELETE /api/equipos/{id}
+PUT /api/equipos/editarEquipo/{id}
+
+Ejempo de datos de registro de un equipo:
+    "id": 1,
+    "ip": "172.22.50.15", (unico, no debe hacer dos equipos con la misma ip)
+    "nombreUsuario": "eco-server",
+    "areaEquipo": "Infraestructura",
+    "nombreEquipo": "SRV-Docker-01",
+    "tipoEquipo": "Ubuntu Server",
+    "puerto": 22,
+    "contrasenia": "dsadfdsrwe545r5fx~##@fdsfdfs",
+    "fechaRegistro": "2026-05-11T18:30:00.000Z"
+
