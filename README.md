@@ -20,8 +20,8 @@ Swagger: http://localhost:3002/api/docs
 POST /api/autenticacion/iniciar-sesion
 Body:
 {
-  "email": "erwin0pisis@gmail.com",
-  "password": "71769118"
+  "email": "example@gmail.com",
+  "password": "7485451"
 }
 
 Usa el token en Authorization: Bearer <token> para los endpoints de equipos.
